@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArduTag - Máquina Expendedora Automatizada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-microchip me-2"></i>ArduTag
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio"><i class="fas fa-home me-1"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#objetivos"><i class="fas fa-bullseye me-1"></i>Objetivos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#justificacion"><i class="fas fa-check-circle me-1"></i>Justificación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#metodologia"><i class="fas fa-tasks me-1"></i>Metodología</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#componentes"><i class="fas fa-microchip me-1"></i>Componentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#desarrollo"><i class="fas fa-code me-1"></i>Desarrollo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#seguridad"><i class="fas fa-shield-alt me-1"></i>Seguridad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conclusiones"><i class="fas fa-flag-checkered me-1"></i>Conclusiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 fw-bold mb-4">
+                        <i class="fas fa-robot me-3"></i>ArduTag
+                    </h1>
+                    <p class="lead">Sistema de Máquina Expendedora Automatizada con RFID</p>
+                    <div class="mt-4">
+                        <a href="#objetivos" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-arrow-down me-2"></i>Conocer más
+                        </a>
+                        <a href="#componentes" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-microchip me-2"></i>Componentes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivos Section -->
+    <section id="objetivos" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-bullseye me-2"></i>Objetivos
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-fingerprint fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Autenticación RFID</h3>
+                            <p class="card-text">Implementar un sistema seguro de autenticación mediante tecnología RFID.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-tachometer-alt fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Eficiencia</h3>
+                            <p class="card-text">Optimizar el proceso de venta y gestión de inventario.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Monitoreo</h3>
+                            <p class="card-text">Desarrollar un sistema de monitoreo en tiempo real.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Justificación Section -->
+    <section id="justificacion" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-check-circle me-2"></i>Justificación
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="justification-card">
+                        <i class="fas fa-shield-alt fa-2x mb-3 text-primary"></i>
+                        <h3>Seguridad</h3>
+                        <p>La tecnología RFID proporciona un nivel de seguridad superior en la autenticación de usuarios.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="justification-card">
+                        <i class="fas fa-clock fa-2x mb-3 text-primary"></i>
+                        <h3>Eficiencia</h3>
+                        <p>Reducción significativa en el tiempo de transacción y gestión de inventario.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="justification-card">
+                        <i class="fas fa-lightbulb fa-2x mb-3 text-primary"></i>
+                        <h3>Innovación</h3>
+                        <p>Implementación de tecnologías modernas para mejorar la experiencia del usuario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodología Section -->
+    <section id="metodologia" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-tasks me-2"></i>Metodología
+            </h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="methodology-steps">
+                        <div class="methodology-step">
+                            <i class="fas fa-search fa-2x mb-3 text-primary"></i>
+                            <h3>Análisis de Requisitos</h3>
+                            <p>Evaluación detallada de las necesidades del sistema y definición de especificaciones.</p>
+                        </div>
+                        <div class="methodology-step">
+                            <i class="fas fa-pencil-ruler fa-2x mb-3 text-primary"></i>
+                            <h3>Diseño del Sistema</h3>
+                            <p>Creación de la arquitectura del sistema y diseño de la interfaz de usuario.</p>
+                        </div>
+                        <div class="methodology-step">
+                            <i class="fas fa-code fa-2x mb-3 text-primary"></i>
+                            <h3>Implementación</h3>
+                            <p>Desarrollo del software y hardware necesarios para el funcionamiento del sistema.</p>
+                        </div>
+                        <div class="methodology-step">
+                            <i class="fas fa-vial fa-2x mb-3 text-primary"></i>
+                            <h3>Pruebas</h3>
+                            <p>Validación del sistema mediante pruebas exhaustivas de funcionalidad y seguridad.</p>
+                        </div>
+                        <div class="methodology-step">
+                            <i class="fas fa-rocket fa-2x mb-3 text-primary"></i>
+                            <h3>Despliegue</h3>
+                            <p>Implementación del sistema en el entorno de producción y capacitación de usuarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Componentes Section -->
+    <section id="componentes" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-microchip me-2"></i>Componentes
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="component">
+                        <i class="fas fa-microchip fa-3x mb-3 text-primary"></i>
+                        <h3>Arduino</h3>
+                        <p>Microcontrolador principal para el control del sistema.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="component">
+                        <i class="fas fa-id-card fa-3x mb-3 text-primary"></i>
+                        <h3>RFID</h3>
+                        <p>Sistema de identificación por radiofrecuencia.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="component">
+                        <i class="fas fa-tachometer-alt fa-3x mb-3 text-primary"></i>
+                        <h3>Sensores</h3>
+                        <p>Detección de productos y monitoreo del sistema.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="component">
+                        <i class="fas fa-desktop fa-3x mb-3 text-primary"></i>
+                        <h3>Interfaz</h3>
+                        <p>Panel de control y visualización para el usuario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desarrollo Section -->
+    <section id="desarrollo" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-code me-2"></i>Desarrollo
+            </h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="content">
+                        <div class="mb-4">
+                            <i class="fas fa-cogs fa-2x mb-3 text-primary"></i>
+                            <h3>Integración de Componentes</h3>
+                            <p>Conectamos todos los componentes del sistema para crear una solución integral.</p>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-database fa-2x mb-3 text-primary"></i>
+                            <h3>Gestión de Inventario</h3>
+                            <p>Implementamos un sistema de gestión de inventario en tiempo real.</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-mobile-alt fa-2x mb-3 text-primary"></i>
+                            <h3>Interfaz de Usuario</h3>
+                            <p>Desarrollamos una interfaz intuitiva y fácil de usar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seguridad Section -->
+    <section id="seguridad" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-shield-alt me-2"></i>Seguridad
+            </h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="security-features">
+                        <div class="security-feature">
+                            <i class="fas fa-lock fa-2x mb-3 text-primary"></i>
+                            <h3>Autenticación RFID</h3>
+                            <p>Sistema seguro de identificación de usuarios mediante tarjetas RFID.</p>
+                        </div>
+                        <div class="security-feature">
+                            <i class="fas fa-history fa-2x mb-3 text-primary"></i>
+                            <h3>Registro de Transacciones</h3>
+                            <p>Registro detallado de todas las operaciones realizadas en el sistema.</p>
+                        </div>
+                        <div class="security-feature">
+                            <i class="fas fa-exclamation-triangle fa-2x mb-3 text-primary"></i>
+                            <h3>Sistema de Alertas</h3>
+                            <p>Notificaciones inmediatas ante cualquier irregularidad o intento de acceso no autorizado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusiones Section -->
+    <section id="conclusiones" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-flag-checkered me-2"></i>Conclusiones
+            </h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="content">
+                        <div class="mb-4">
+                            <i class="fas fa-check-circle fa-2x mb-3 text-primary"></i>
+                            <h3>Resultados</h3>
+                            <p>El sistema ArduTag ha demostrado ser una solución efectiva para la automatización de máquinas expendedoras.</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-chart-line fa-2x mb-3 text-primary"></i>
+                            <h3>Mejoras Futuras</h3>
+                            <p>Planeamos implementar nuevas funcionalidades y optimizaciones en futuras versiones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="mb-3">
+                        <i class="fas fa-microchip me-2"></i>ArduTag
+                    </h4>
+                    <p>Sistema de Máquina Expendedora Automatizada con RFID</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2025 ArduTag. Todos los derechos reservados.</p>
+                    <p class="mb-0">Desarrollado por: María Gómez y Nayeli Silvero</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
