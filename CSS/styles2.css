@@ -1,0 +1,540 @@
+
+:root {
+    --color-dark: #1a1a1a;   
+    --color-light: #e0e0e0;   
+    --color-primary: #007a5e;  
+    --color-secondary: #2bb19f; 
+    --color-tertiary: #9fe0e0;  
+    --transition: all 0.3s ease-in-out;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    --shadow-strong: 0 8px 30px rgba(0, 0, 0, 0.25);
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--color-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+.btn {
+    transition: var(--transition);
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    padding: 0.6rem 1.5rem;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.btn-outline-light {
+    color: var(--color-light);
+    border-color: var(--color-light);
+}
+
+.btn-outline-light:hover, .btn-outline-light:focus {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 5rem 0;
+    position: relative;
+}
+
+.section h2 {
+    margin-bottom: 2.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 40%;
+    height: 4px;
+    background-color: var(--color-secondary);
+    border-radius: 2px;
+}
+
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
+.navbar {
+    background-color: var(--color-dark);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--color-light);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, 
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: var(--color-tertiary);
+    background-color: rgba(255,255,255,0.1);
+}
+
+.navbar-brand {
+    color: var(--color-light);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    color: var(--color-secondary);
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: var(--color-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/Img/circuit-pattern.png');
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    color: var(--color-light);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.hero .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+#objetivos {
+    background-color: var(--color-light);
+}
+
+#objetivos .card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    height: 100%;
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+#objetivos .card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-strong);
+}
+
+#objetivos .card-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+#objetivos .card i {
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+}
+
+#justificacion {
+    background-color: #f8f9fa;
+}
+
+.justification-card {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    height: 100%;
+    transition: var(--transition);
+}
+
+.justification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-strong);
+}
+
+.justification-card i {
+    margin-bottom: 1.5rem;
+}
+
+#metodologia {
+    background-color: var(--color-light);
+    position: relative;
+}
+
+.methodology-steps {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 4px solid var(--color-secondary);
+}
+
+.methodology-step {
+    position: relative;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.methodology-step:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-strong);
+}
+
+.methodology-step:before {
+    content: '';
+    position: absolute;
+    left: -2.35rem;
+    top: 2rem;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-secondary);
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.methodology-step i {
+    color: var(--color-primary);
+}
+
+#evolucion {
+    background-color: #f8f9fa;
+}
+
+#evolucionCarrusel {
+    box-shadow: var(--shadow-strong);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+#evolucionCarrusel .carousel-inner {
+    border-radius: var(--border-radius);
+}
+
+#evolucionCarrusel .carousel-item img {
+    height: 600px; 
+    object-fit: cover; 
+    width: 100%;
+}
+
+#evolucionCarrusel .carousel-caption {
+    background-color: rgba(26, 26, 26, 0.7);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    bottom: 2rem;
+    left: 10%;
+    right: 10%;
+}
+
+#evolucionCarrusel .carousel-control-next,
+#evolucionCarrusel .carousel-control-prev {
+    width: 5%;
+}
+
+#evolucionCarrusel .carousel-indicators {
+    bottom: 0;
+}
+
+#evolucionCarrusel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+#componentes {
+    background-color: var(--color-light);
+}
+
+.component {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    height: 100%;
+    transition: var(--transition);
+}
+
+.component:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-strong);
+}
+
+.component i {
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.video-container {
+    margin-top: 3rem;
+}
+
+.video-container .ratio {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-strong);
+}
+
+.video-container iframe {
+    border-radius: var(--border-radius);
+}
+
+#desarrollo {
+    background-color: #f8f9fa;
+}
+
+#desarrollo .content {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+#desarrollo i {
+    color: var(--color-primary);
+}
+
+#integrantes {
+    background-color: var(--color-light);
+}
+
+.team-card {
+    border: none;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-strong);
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid var(--color-tertiary);
+    box-shadow: var(--shadow);
+}
+
+.social-links a {
+    margin: 0 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+#seguridad {
+    background-color: #f8f9fa;
+}
+
+.security-features {
+    position: relative;
+}
+
+.security-feature {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-left: 5px solid var(--color-primary);
+}
+
+.security-feature:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-strong);
+}
+
+.security-feature i {
+    color: var(--color-primary);
+}
+
+/* Conclusiones Section */
+#conclusiones {
+    background-color: var(--color-light);
+}
+
+#conclusiones .content {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+#conclusiones i {
+    color: var(--color-primary);
+}
+
+footer {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 3rem 0;
+}
+
+footer h4 {
+    color: var(--color-light);
+    font-weight: 600;
+}
+
+footer i {
+    color: var(--color-secondary);
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .section {
+        padding: 4rem 0;
+    }
+    
+    #evolucionCarrusel .carousel-item img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .hero {
+        min-height: 80vh;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .lead {
+        font-size: 1.2rem;
+    }
+    
+    #evolucionCarrusel .carousel-item img {
+        height: 300px;
+    }
+    
+    .methodology-steps {
+        padding-left: 1.5rem;
+    }
+    
+    .methodology-step:before {
+        left: -1.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section h2 {
+        font-size: 1.8rem;
+    }
+    
+    #evolucionCarrusel .carousel-item img {
+        height: 250px;
+    }
+    
+    .hero .btn {
+        display: block;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+#evolucionCarrusel .carousel-item:nth-child(3) img[src="/"] {
+    background-color: var(--color-tertiary);
+    position: relative;
+}
+
+#evolucionCarrusel .carousel-item:nth-child(3) img[src="/"]:after {
+    content: "Imagen no disponible";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-dark);
+    font-size: 1.5rem;
+    font-weight: 500;
+}

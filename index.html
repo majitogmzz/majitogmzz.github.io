@@ -6,7 +6,7 @@
     <title>ArduTag - Máquina Expendedora Automatizada</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/CSS/styles2.css">
 </head>
 <body>
     <!-- Navbar con Bootstrap -->
@@ -24,8 +24,10 @@
                     <li class="nav-item"><a class="nav-link" href="#objetivos"><i class="fas fa-bullseye me-1"></i>Objetivos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#justificacion"><i class="fas fa-check-circle me-1"></i>Justificación</a></li>
                     <li class="nav-item"><a class="nav-link" href="#metodologia"><i class="fas fa-tasks me-1"></i>Metodología</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#evolucion"><i class="fas fa-history me-1"></i>Evolución</a></li>
                     <li class="nav-item"><a class="nav-link" href="#componentes"><i class="fas fa-microchip me-1"></i>Componentes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#desarrollo"><i class="fas fa-code me-1"></i>Desarrollo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#integrantes"><i class="fas fa-users me-1"></i>Integrantes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#seguridad"><i class="fas fa-shield-alt me-1"></i>Seguridad</a></li>
                     <li class="nav-item"><a class="nav-link" href="#conclusiones"><i class="fas fa-flag-checkered me-1"></i>Conclusiones</a></li>
                 </ul>
@@ -93,7 +95,6 @@
         </div>
     </section>
 
-    <!-- Justificación Section -->
     <section id="justificacion" class="section">
         <div class="container">
             <h2 class="text-center mb-5">
@@ -165,7 +166,65 @@
         </div>
     </section>
 
-    <!-- Componentes Section -->
+
+    <section id="evolucion" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-history me-2"></i>Evolución del Proyecto
+            </h2>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div id="evolucionCarrusel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#evolucionCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#evolucionCarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#evolucionCarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#evolucionCarrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="/Img/Imagen de WhatsApp 2025-04-09 a las 10.50.59_8ceb1d43.jpg" class="d-block w-100" alt="Fase inicial del proyecto">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Fase Inicial</h3>
+                                    <p>Conceptualización y diseño preliminar del sistema.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Img/Imagen de WhatsApp 2025-04-14 a las 13.37.01_da18aa13.jpg" class="d-block w-100" alt="Desarrollo de hardware">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Desarrollo de Hardware</h3>
+                                    <p>Implementación de los componentes físicos del sistema.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/" class="d-block w-100" alt="Desarrollo de software">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Desarrollo de Software</h3>
+                                    <p>Programación de la lógica y funcionalidades del sistema.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Img/Imagen de WhatsApp 2025-04-14 a las 13.46.54_b662b2aa.jpg" class="d-block w-100" alt="Implementación final">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Implementación Final</h3>
+                                    <p>Integración y puesta en marcha del sistema completo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#evolucionCarrusel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#evolucionCarrusel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="componentes" class="section">
         <div class="container">
             <h2 class="text-center mb-5">
@@ -198,6 +257,23 @@
                         <i class="fas fa-desktop fa-3x mb-3 text-primary"></i>
                         <h3>Interfaz</h3>
                         <p>Panel de control y visualización para el usuario.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="video-container text-center">
+                        <h3 class="mb-4">Demostración de Componentes</h3>
+                        <div class="ratio ratio-16x9 shadow rounded">
+                            <iframe width="560" height="315" 
+                                src="/Img/Video de WhatsApp 2025-04-09 a las 10.50.56_009426e9.mp4" 
+                                title="Demostración de Componentes" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                autoplay muted loop
+                                allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,7 +310,41 @@
         </div>
     </section>
 
-    <!-- Seguridad Section -->
+    <section id="integrantes" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-users me-2"></i>Integrantes
+            </h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-5">
+                    <div class="card team-card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-4">
+                                <img src="/Img/majo.jpg" class="rounded-circle img-fluid mb-3" alt="María Gómez" style="max-width: 150px;">
+                                <h3 class="card-title">María Gómez</h3>
+                                <p class="text-primary">Desarrolladora Principal</p>
+                            </div>
+                            <p class="card-text">Creadora del proyecto junto a Nayeli Silvero.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card team-card h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-4">
+                                <img src="/Img/naye.jpg" class="rounded-circle img-fluid mb-3" alt="Nayeli Silvero" style="max-width: 150px;">
+                                <h3 class="card-title">Nayeli Silvero</h3>
+                                <p class="text-primary">Desarrolladora Principal</p>
+                            </div>
+                            <p class="card-text">Creadora del proyecto junto a María Gómez.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="seguridad" class="section">
         <div class="container">
             <h2 class="text-center mb-5">
@@ -264,7 +374,6 @@
         </div>
     </section>
 
-    <!-- Conclusiones Section -->
     <section id="conclusiones" class="section">
         <div class="container">
             <h2 class="text-center mb-5">
@@ -277,6 +386,18 @@
                             <i class="fas fa-check-circle fa-2x mb-3 text-primary"></i>
                             <h3>Resultados</h3>
                             <p>El sistema ArduTag ha demostrado ser una solución efectiva para la automatización de máquinas expendedoras.</p>
+                            
+                            <div class="mt-4 mb-5">
+                                <div class="ratio ratio-16x9 shadow rounded">
+                                    <iframe width="560" height="315" 
+                                    src="/Img/Video de WhatsApp 2025-04-14 a las 14.16.57_a6a2a613.mp4" 
+                                    title="Resultados del Proyecto" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    autoplay muted loop
+                                    allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
                         <div>
                             <i class="fas fa-chart-line fa-2x mb-3 text-primary"></i>
@@ -308,5 +429,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script></script>
 </body>
 </html>
